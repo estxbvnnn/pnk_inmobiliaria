@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Cuenta - PNK Inmobiliaria</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/validation.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Recuperar Cuenta</h1>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Recupera tu cuenta</h2>
+            <form id="recoverForm" action="src/controllers/AuthController.php" method="POST">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="rut">RUT:</label>
+                <input type="text" id="rut" name="rut" required>
+                
+                <button type="submit" class="btn">Recuperar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 PNK Inmobiliaria. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

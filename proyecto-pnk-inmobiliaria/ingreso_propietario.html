@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Propiedad - PNK Inmobiliaria</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/validation.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Registro de Propiedad</h1>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Registra tu propiedad</h2>
+            <form id="property-registration-form" action="src/controllers/PropertyController.php" method="POST">
+                <label for="property-name">Nombre de la Propiedad:</label>
+                <input type="text" id="property-name" name="property_name" required>
+
+                <label for="property-address">Dirección:</label>
+                <input type="text" id="property-address" name="property_address" required>
+
+                <label for="property-type">Tipo de Propiedad:</label>
+                <select id="property-type" name="property_type" required>
+                    <option value="casa">Casa</option>
+                    <option value="departamento">Departamento</option>
+                    <option value="terreno">Terreno</option>
+                </select>
+
+                <label for="property-price">Precio:</label>
+                <input type="number" id="property-price" name="property_price" required>
+
+                <label for="property-description">Descripción:</label>
+                <textarea id="property-description" name="property_description" required></textarea>
+
+                <button type="submit" class="btn btn-primary">Registrar Propiedad</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 PNK Inmobiliaria. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
